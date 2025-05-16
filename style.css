@@ -1,0 +1,57 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-generator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide-preview {
+    width: 300px;
+    height: 300px;
+    background-color: #000;
+    color: white;
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    object-fit: cover;
+}
+
+.profile-name {
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    font-size: 14px;
+}
+
+.slide-text {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    right: 10px;
+    font-size: 18px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+}

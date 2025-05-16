@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Carousel Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="carousel-generator">
+        <div class="slide-preview" id="slidePreview">
+            <img id="profilePic" class="profile-pic" src="" alt="">
+            <div class="profile-name" id="profileName">Your Name</div>
+            <div class="slide-text" id="slideText">Content goes here...</div>
+        </div>
+        <div class="nav-buttons">
+            <button id="prevSlide">← Prev</button>
+            <button id="nextSlide">Next →</button>
+        </div>
+        
+
+
+<div class="controls">
+            <textarea id="textInput" placeholder="Content goes here…"></textarea>
+            <input type="text" id="nameInput" placeholder="Your Name">
+            <input type="file" id="profilePicInput" accept="image/*">
+            <label>Text Color: <input type="color" id="textColor"></label>
+            <label>Background Color: <input type="color" id="bgColor"></label>
+            <select id="fontSelect">
+                <option value="Arial">Arial</option>
+                <option value="Verdana">Verdana</option>
+                <option value="Georgia">Georgia</option>
+                <option value="Courier New">Courier New</option>
+            </select>
+            <input type="file" id="bgImageInput" accept="image/*">
+        </div>
+        <button id="exportPDF">Export to PDF</button>
+    </div>
+    
+    <script src="script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+</body>
+</html>
